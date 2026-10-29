@@ -1,0 +1,70 @@
+* { box-sizing: border-box; }
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f7fb;
+  color: #1f2a3c;
+  margin: 0;
+  line-height: 1.5;
+}
+header {
+  background: #173f75;
+  color: #fff;
+  padding: 20px 24px;
+}
+header h1 { margin: 0 0 4px; }
+header p { margin: 0; opacity: .85; }
+main { max-width: 760px; margin: 24px auto; padding: 0 16px; }
+.kartu {
+  background: #fff;
+  border: 1px solid #d9e2ef;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 18px;
+}
+.kartu h2 { margin-top: 0; font-size: 1.1rem; color: #173f75; }
+label { display: block; margin-top: 8px; font-weight: 600; }
+input, select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 4px;
+  border: 1px solid #b8c4d6;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #3478c8;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+button:hover { background: #2a63a8; }
+
+/* Latihan 3 */
+.highlight {
+  color: #173f75;
+  background-color: #e6f1ff;
+  border-left: 4px solid #3478c8;
+  padding: 12px;
+}
+.teks-besar { font-size: 1.4rem; }
+
+#latihan3 button { margin-right: 6px; }
+
+/* Latihan 5 */
+#pesanForm { font-weight: 600; min-height: 1.5em; }
+#pesanForm.error { color: #b3261e; }
+#pesanForm.sukses { color: #1b7a3a; }
+
+/* Latihan 6 */
+.selesai span { text-decoration: line-through; color: #687386; }
+li { margin-bottom: 8px; }
+li button { margin-top: 0; margin-left: 6px; padding: 4px 10px; font-size: .9rem; }
+li button.hapus { background: #b3261e; }
+#pesanTugas { min-height: 1.5em; }
+
+/* Eksperimen 4 */
+.tersembunyi { display: none; }

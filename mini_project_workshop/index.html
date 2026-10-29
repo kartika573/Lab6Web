@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran Workshop</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="wadah">
+    <h1>Pendaftaran Workshop Web</h1>
+    <p class="sub">Isi data berikut untuk mengikuti workshop.</p>
+
+    <form id="formWorkshop" novalidate>
+      <div class="bidang">
+        <label for="nama">Nama lengkap</label>
+        <input id="nama" type="text" maxlength="40" autocomplete="off">
+        <small class="hitung">Jumlah karakter: <span id="jumlahNama">0</span>/40</small>
+        <p class="galat" id="galatNama" aria-live="polite"></p>
+      </div>
+
+      <div class="bidang">
+        <label for="email">Email</label>
+        <input id="email" type="email" autocomplete="off">
+        <p class="galat" id="galatEmail" aria-live="polite"></p>
+      </div>
+
+      <div class="bidang">
+        <label for="sesi">Pilihan sesi</label>
+        <select id="sesi">
+          <option value="">-- Pilih sesi --</option>
+          <option value="Sesi 1 (09.00 - 11.00)">Sesi 1 (09.00 - 11.00)</option>
+          <option value="Sesi 2 (13.00 - 15.00)">Sesi 2 (13.00 - 15.00)</option>
+          <option value="Sesi 3 (15.30 - 17.30)">Sesi 3 (15.30 - 17.30)</option>
+        </select>
+        <p class="galat" id="galatSesi" aria-live="polite"></p>
+      </div>
+
+      <div class="ringkasan-langsung">
+        <strong>Ringkasan langsung:</strong>
+        <p id="ringkasanLangsung">Belum ada data yang diisi.</p>
+      </div>
+
+      <div class="aksi">
+        <button type="submit" class="utama">Daftar</button>
+        <button type="button" id="tombolReset" class="sekunder">Reset</button>
+      </div>
+    </form>
+
+    <p id="pesanSukses" class="sukses" aria-live="polite"></p>
+
+    <section id="hasilPendaftaran" class="hasil tersembunyi">
+      <h2>Pendaftaran Berhasil</h2>
+      <p><strong>Nama:</strong> <span id="hasilNama"></span></p>
+      <p><strong>Email:</strong> <span id="hasilEmail"></span></p>
+      <p><strong>Sesi:</strong> <span id="hasilSesi"></span></p>
+    </section>
+  </main>
+</body>
+</html>
